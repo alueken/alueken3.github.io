@@ -1,22 +1,72 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Lueken's Portfolio</title>
     <style>
-      body{
-        background: linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet);
-        color: black;
-        text-align: center;
-        display:grid;
-        place-items:center;
-      }
+        body {
+            background: linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet);
+            color: black;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        nav {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+            padding: 10px;
+            transition: 0.3s;
+        }
+        
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+        }
+        
+        .content {
+            margin-top: 80px;
+            max-width: 800px;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+        }
     </style>
-  </head>
-  <body>
-    <a href = "unit2.html">Unit 2</a>
-    <h1>Mr. Lueken's Portfolio</h1>
-    <h2>My CS Portfolio: Sharing the Art of Code Through Real-World Xperience!</h2>
-    <img src="media/splashscreen.png">
-    <h3>I created the above splashscreen in Python. I created the _____ and the _____.</h3> 
-    <h3>Below is some of my code snippets from this project.</h3>
-    <img src="media/Unit1_code.png">
-  </body> 
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="unit2.html">Unit 2</a>
+    </nav>
+    
+    <div class="content">
+        <h1>Mr. Lueken's Portfolio</h1>
+        <h2>My CS Portfolio: Sharing the Art of Code Through Real-World Xperience!</h2>
+        <img src="media/splashscreen.png" alt="Splashscreen created in Python">
+        <h3>I created the above splashscreen in Python. I created the _____ and the _____.</h3> 
+        <h3>Below is some of my code snippets from this project.</h3>
+        <img src="media/Unit1_code.png" alt="Code snippet from Unit 1">
+    </div>
+</body>
 </html>
